@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Assistant</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>📋 Personal Assistant</h1>
+        <p class="subtitle">Manage your tasks and stay organized</p>
+      </header>
+
+      <main>
+        <section class="input-section">
+          <input
+            type="text"
+            id="task-input"
+            placeholder="Enter a new task..."
+            class="task-input"
+          />
+          <button id="add-task-btn" class="btn btn-primary">Add Task</button>
+        </section>
+
+        <section class="tasks-section">
+          <div class="tasks-header">
+            <h2>Tasks</h2>
+            <button id="clear-all-btn" class="btn btn-secondary">
+              Clear All
+            </button>
+          </div>
+          <ul id="task-list" class="task-list"></ul>
+        </section>
+      </main>
+
+      <footer>
+        <p>Personal Assistant v1.0.0</p>
+      </footer>
+    </div>
+
+    <script src="../src/renderer.js"></script>
+  </body>
+</html>
